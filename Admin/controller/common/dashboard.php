@@ -59,7 +59,7 @@ class dashboard extends Controller
         
         $result = $this->database->Query($query);
         
-        print_ar($result);
+        print_r($result);
         
         $this->view->view('common/dashboard',$data);
        
