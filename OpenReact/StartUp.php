@@ -15,7 +15,7 @@ require 'Engine/Loader.php';
 function Library($class)
 {
     // Testing purpose
-    $file = "OpenReact/Library/".str_replace('\\', '/', $class).".php";
+    $file = "/OpenReact/Library/".str_replace('\\', '/', $class).".php";
     if(is_file($file))
     {
         include_once($file);
@@ -30,7 +30,7 @@ function Library($class)
 function Framework($class)
 {
    // Testing purpose
- $file = "OpenReact/Framework/".str_replace('\\', '/', $class).".php";
+ $file = "/OpenReact/Framework/".str_replace('\\', '/', $class).".php";
     if(is_file($file))
     {
         include_once($file);
@@ -44,7 +44,7 @@ function Framework($class)
 function Node($class)
 {
     // Testing purpose
-    $file = "OpenReact/Framework/Node/".str_replace('\\', '/', $class).".php";
+    $file = "/OpenReact/Framework/Node/".str_replace('\\', '/', $class).".php";
     if(is_file($file))
     {
         include_once($file);
@@ -58,7 +58,7 @@ function Node($class)
 function Cache($class)
 {
     // Testing purpose
-    $file = "OpenReact/Library/Cache/".str_replace('\\', '/', $class).".php";
+    $file = "/OpenReact/Library/Cache/".str_replace('\\', '/', $class).".php";
     if(is_file($file))
     {
         include_once($file);
