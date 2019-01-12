@@ -29,9 +29,7 @@ class dashboard extends Controller
         $this->compiler->setErrorHandler('ErrorHandler');
         $this->compiler->Compile($script);
         $res = $this->compiler->get('code');
-        
-        
-       
+      
        $data['react_root'] = $this->cache->cacheFile('main.js',$res);
      
       }
@@ -57,6 +55,11 @@ class dashboard extends Controller
         echo $this->react->execute();
             */
         //echo $res;
+        $query = "select * from products";
+        
+        $result = $this->database->Query($query);
+        
+        print_ar($result);
         
         $this->view->view('common/dashboard',$data);
        
