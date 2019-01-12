@@ -24,6 +24,7 @@ class MainCache {
     {
         $this->registry = $registry;
         $this->getServicePath();
+       echo $cache_map;
         if(!file_exists($this->main_cache.$this->main_cache_map))
         {
             $this->createCacheMap();
