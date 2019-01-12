@@ -56,10 +56,8 @@ class dashboard extends Controller
             */
         //echo $res;
         $query = "select * from products";
-        
-        $result = $this->database->Query($query);
-        
-        print_r($result);
+       
+       $data['products'] = $this->database->Query($query);
         
         $this->view->view('common/dashboard',$data);
        
