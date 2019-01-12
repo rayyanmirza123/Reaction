@@ -15,15 +15,15 @@ $babel = new ReactCompiler();
 
 $document = new Document();
 
-$document->addCss(DIR_WIN.'Admin\\css\\custom.css');
+$document->addCss('../Admin/css/custom.css');
 
-$document->addJs(DIR_WIN.'Admin\\js\\react.js');
-$document->addJs(DIR_WIN.'Admin\\js\\babel.js');
-$document->addJs(DIR_WIN.'Admin\\js\\react-dom-server.js');
-$document->addJs(DIR_WIN.'Admin\\js\\react-dom.js');
-$document->addJs(DIR_WIN.'Admin\\js\\create-react-class.js');
-$document->addJs(DIR_WIN.'Admin\\js\\react_bundle.js');
-$document->addJs(DIR_WIN.'Admin\\js\\main.jsx');
+$document->addJs('../Admin/js/react.js');
+$document->addJs('../Admin/js/babel.js');
+$document->addJs('../Admin/js/react-dom-server.js');
+$document->addJs('../Admin/js/react-dom.js');
+$document->addJs('../Admin/js/create-react-class.js');
+$document->addJs('../Admin/js/react_bundle.js');
+$document->addJs('../Admin/js/main.jsx');
 
 $view = new View($service);
 
