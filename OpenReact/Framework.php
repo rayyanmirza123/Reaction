@@ -7,6 +7,7 @@
 error_reporting(E_ALL);
 
 require "/app/OpenReact/Framework/Node/ReactJs.php";
+require "/app/OpenReact/Library/Database/Postgresql.php";
 
 $registry = new Registry();
 $config = new Config();
@@ -38,10 +39,18 @@ $registry->set('view',$view);
 $loader = new Loader($registry);
 $registry->set('cache',$cache);
 
+$user = $config->get('db_user');
+$pass = $config->get('db_password');
+$name = $config->get('db_name');
+$host = $config->get('db_host');
+
+$pg_database = new Postgresql($name,$host,$user,$pass);
+
 $registry->set('load',$loader);
 $registry->set('request',new Request());
 $registry->set('react',$react);
 $registry->set('compiler',$babel);
+$registry->set('database',$pg_database);
 
 $response = new Response();
 $response->addHeader('Content-Type: text/html; charset=utf-8');
