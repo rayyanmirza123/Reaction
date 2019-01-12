@@ -15,7 +15,7 @@ class View {
     
     public function __construct($service)
     {
-        $this->doc = DIR_APPLICATION.$service."\\view\\";
+        $this->doc = DIR_APPLICATION."/view/";
         echo $this->doc;
     }
     
