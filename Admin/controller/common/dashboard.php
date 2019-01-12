@@ -16,9 +16,11 @@ class dashboard extends Controller
         $data['js'] = $this->document->getJs();
         
         
+        print_r($data);
+        
         if(!empty($this->cache->checkCache('main.js'))){
           $data['react_root'] = $this->cache->loadCache('main.js');
-          print_r($data);  
+          
         }
  else {
         $app = trim(preg_replace('/\s+/', ' ', file_get_contents($this->document->get('main'))));
