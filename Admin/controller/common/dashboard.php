@@ -15,8 +15,7 @@ class dashboard extends Controller
         $data['css'] = $this->document->getCss();
         $data['js'] = $this->document->getJs();
         
-        
-        print_r($this->cache->checkCache('main.js'));
+        echo $this->config->get('default_cache');
         
         if(!empty($this->cache->checkCache('main.js'))){
           $data['react_root'] = $this->cache->loadCache('main.js');
