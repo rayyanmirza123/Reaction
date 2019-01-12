@@ -14,7 +14,7 @@ class Config {
     
     public function load($file)
     {
-        $file = DIR_WIN_CONFIG.$file.".php";
+        $file = '/app/Config/'.$file.".php";
         if(is_file($file))
         {
             $_ = array();
