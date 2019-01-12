@@ -16,7 +16,7 @@ class dashboard extends Controller
         $data['js'] = $this->document->getJs();
         
         
-       
+       echo "Hello";
         
         if(!empty($this->cache->checkCache('main.js'))){
           $data['react_root'] = $this->cache->loadCache('main.js');
