@@ -6,4 +6,4 @@
 
 $route = filter_input(INPUT_SERVER,'REQUEST_URI');
 $route = urldecode($route);
-header('Location: /OpenReact/Admin/index.php?route='.$route);
+header('Location: /Admin/index.php?route='.$route);
