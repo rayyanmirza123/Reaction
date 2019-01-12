@@ -123,7 +123,7 @@ class MainCache {
            */
            $parts = explode('/',$this->main_cache);
            array_shift($parts);
-           $this-main_cache = implode('/',$parts);
+           $this->main_cache = implode('/',$parts);
             return $this->main_cache.$res[1];
         }
     }
