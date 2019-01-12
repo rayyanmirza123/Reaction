@@ -32,10 +32,10 @@ class dashboard extends Controller
         
         
        
-     $data['react_root'] = $this->cache->cacheFile('main.js',$res);
+       $data['react_root'] = $this->cache->cacheFile('main.js',$res);
      
       }
-       print_r($data); 
+       
       /*$this->react->setModuleLoader(function($path){
         $file = $this->document->get($path);
         if(is_file($file))
