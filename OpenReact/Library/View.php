@@ -1,0 +1,32 @@
+<?php
+
+/*
+ *  Damn Straight now copying only buying.
+ */
+
+/**
+ * Description of View
+ *
+ * @author Rayyan
+ */
+class View {
+    
+    private $doc;
+    
+    public function __construct($service)
+    {
+        $this->doc = DIR_WIN.$service."\\view\\";
+    }
+    
+    public function view($file,$data=array())
+    {
+        $view = $this->doc.$file.".php";
+       
+        if(is_file($view))
+        {
+            include_once($view);
+        }
+    }
+    
+    
+}
