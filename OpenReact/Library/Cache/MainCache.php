@@ -124,6 +124,7 @@ class MainCache {
            $parts = explode('/',$this->main_cache);
            array_shift($parts);
            $this->main_cache = implode('/',$parts);
+           echo $this->main_cache;
             return $this->main_cache.$res[1];
         }
     }
