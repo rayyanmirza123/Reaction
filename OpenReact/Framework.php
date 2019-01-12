@@ -6,6 +6,7 @@
 
 error_reporting(E_ALL);
 
+require "/app/OpenReact/Framework/Node/ReactJs.php";
 
 $registry = new Registry();
 $config = new Config();
