@@ -15,7 +15,7 @@ class View {
     
     public function __construct($service)
     {
-        $this->doc = DIR_WIN.$service."\\view\\";
+        $this->doc = DIR_APPLICATION.$service."\\view\\";
     }
     
     public function view($file,$data=array())
