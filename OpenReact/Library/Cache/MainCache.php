@@ -118,6 +118,12 @@ class MainCache {
         
         if(!empty($res))
         {
+           /*
+           *current workaround for heroku
+           */
+           $parts = explode('/',$this->main_cache);
+           array_shift($parts);
+           $this-main_cache = implode('/',$parts);
             return $this->main_cache.$res[1];
         }
     }
