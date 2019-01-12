@@ -7,5 +7,5 @@
 $_['default'] = 'common/dashboard';
 $_['helloWorld'] = 'common/dashboard/helloWorld';
 $_['response_compression'] = 0;
-        
+$_['default_cache'] = DIR_APPLICATION.'/Cache/';       
 
