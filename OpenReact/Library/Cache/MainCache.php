@@ -74,6 +74,7 @@ class MainCache {
     public function checkCache($file)
     {
         $name = $this->getCacheName($file);
+        print_r($name);
         return $name;
     }
     
