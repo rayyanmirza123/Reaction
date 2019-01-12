@@ -76,7 +76,7 @@ class ReactCompiler {
         }
         else
         {
-            $this->babel_path = DIR_WIN."Admin\\js\\";
+            $this->babel_path = DIR_APPLICATION."Admin/js/";
             $this->babel = file_get_contents($this->babel_path."react_bundle.js");
         }
     }
