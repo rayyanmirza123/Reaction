@@ -7,7 +7,7 @@ private $path;
 private $request;
 private $reserve = array();
 
-public function __construct($request,$reservere = array())
+public function __construct($request,$reserve = array())
 {
     $this->request = $request;
     $this->reserve = $reserve;
